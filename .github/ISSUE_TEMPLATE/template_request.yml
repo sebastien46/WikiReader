@@ -23,7 +23,9 @@ body:
         - https://en.wikipedia.org/wiki/Template:<insert_second_template_name_here>
         - etc.
       value: |
-        
+        - Link 1
+        - Link 2
+        - etc.
     validations:
       required: true
   - type: textarea
@@ -36,7 +38,9 @@ body:
         - https://en.wikipedia.org/wiki/<insert_second_article_name_here>
         - etc.
       value: |
-        
+        - Link 1
+        - Link 2
+        - etc.
     validations:
       required: true
   - type: textarea
@@ -53,7 +57,11 @@ body:
           (image)
         - etc.
       value: |
-        
+        - 1st screenshot in WikiReader's description
+          (image)
+        - 1st screenshot in Wikipedia's description
+          (image)
+        - etc.
   - type: textarea
     id: article-source-code
     attributes:
@@ -65,7 +73,7 @@ body:
         
       render: mediawiki
     validations:
-      required: true
+      required: false
   - type: checkboxes
     id: template-criteria
     attributes:
