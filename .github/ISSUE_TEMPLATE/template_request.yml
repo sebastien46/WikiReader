@@ -70,7 +70,7 @@ body:
         Please copy and paste the relevant Wikipedia articles' source code snippet (found in the Edit page) here.
         This will be automatically formatted into code, so no need for backticks.
       value: |
-        
+        Insert source code here (delete this text first)
       render: mediawiki
     validations:
       required: false
