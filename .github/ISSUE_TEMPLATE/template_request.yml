@@ -7,7 +7,7 @@ body:
   - type: textarea
     id: template-name
     attributes:
-      label: "Requested template(s)"
+      label: Requested template(s)
       description: |
         To find the template(s) used by a Wikipedia article,
         1. Go to it's Edit page at the section that fails to render in WikiReader
@@ -23,24 +23,26 @@ body:
         - https://en.wikipedia.org/wiki/Template:<insert_second_template_name_here>
         - etc.
       value: |
+        
     validations:
       required: true
   - type: textarea
     id: article
     attributes:
-      label: "Affected article(s)"
+      label: Affected article(s)
       description: Please provide one / a few examples of articles where the template(s) appear
       placeholder: |
         - https://en.wikipedia.org/wiki/<insert_first_article_name_here>
         - https://en.wikipedia.org/wiki/<insert_second_article_name_here>
         - etc.
       value: |
+        
     validations:
       required: true
   - type: textarea
     id: article-screenshots
     attributes:
-      label: "Article screenshots"
+      label: Article screenshots
       description: |
         If possible please include some screenshots of the WikiReader app where it fails to render missing templates,
         as well as the original Wikipedia article website rendering for reference.
@@ -51,14 +53,16 @@ body:
           (image)
         - etc.
       value: |
+        
   - type: textarea
     id: article-source-code
     attributes:
-      label: "Article source code" 
+      label: Article source code 
       description: |
         Please copy and paste the relevant Wikipedia articles' source code snippet (found in the Edit page) here.
         This will be automatically formatted into code, so no need for backticks.
       value: |
+        
       render: mediawiki
     validations:
       required: true
